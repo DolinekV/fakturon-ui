@@ -3,14 +3,12 @@
 import * as React from "react";
 import {
   AudioWaveform,
-  BookOpen,
   Command, FileText,
   Frame,
   GalleryVerticalEnd,
-  Map,
+  Map, Package,
   PieChart,
-  Settings2,
-  Users,
+  Users
 } from "lucide-react";
 
 import { NavMain } from "@/atoms/nav-main";
@@ -53,6 +51,18 @@ const data = {
         {
           title: "Overview",
           url: "/invoices",
+        },
+      ],
+    },
+    {
+      title: "Products",
+      url: "/products",
+      icon: Package,
+      isActive: true,
+      items: [
+        {
+          title: "Overview",
+          url: "/products",
         },
       ],
     },
